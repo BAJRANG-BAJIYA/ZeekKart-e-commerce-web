@@ -36,9 +36,8 @@ padding-top:5px;
   font-weight: 500;
   align-items: center;
   cursor: pointer ;
-  font-family: 'Lobster', cursive;
+  font-family: 'segoe UI', cursive;
   ${mobile({ padding: "10px 0px" })}
-  &:hover {color: rgb(255, 244, 35);
     transition:  0.5 ease-in;
     transform: scale(1.1);
   };
