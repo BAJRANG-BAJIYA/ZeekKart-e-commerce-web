@@ -123,7 +123,14 @@ export const Navbar = () => {
     <Container>
     <Wrapper>
     
-    <Left><Logo>ZeekKart</Logo></Left>
+    <Left><NavLink to="/"
+            style={isActive => ({
+    color: isActive ? "white" : "gray",
+    textDecoration: 'none'
+  })}>
+    <Logo>RB Collections</Logo>
+    </NavLink>
+</Left>
     
             <Center>
               <SearchContainer>
@@ -139,14 +146,35 @@ export const Navbar = () => {
             </Center>
     
             <Right>
+            <NavLink to="/register"
+            style={isActive => ({
+    color: isActive ? "white" : "blue",
+    textDecoration: 'none'
+  })}
+            >
             <NavMenu >REGISTER</NavMenu>
+            </NavLink>
+            <NavLink to="login"
+            style={isActive => ({
+    color: isActive ? "white" : "blue",
+    textDecoration: 'none'
+  })}
+            >
             <NavMenu >SIGN IN</NavMenu>
-         
-            <CartDiv> 
-    <Badge badgeContent={2} color="primary">
+            </NavLink>
+            
+         <NavLink to="cart"
+            style={isActive => ({
+    color: isActive ? "white" : "blue",
+    textDecoration: 'none'
+  })} >
+         <CartDiv> 
+    <Badge badgeContent={0} color="primary">
             <ShoppingCartRounded />
       </Badge>
       </CartDiv>
+
+         </NavLink>
            
             </Right>
           </Wrapper>
