@@ -127,7 +127,7 @@ export const Navbar = () => {
     color: isActive ? "white" : "gray",
     textDecoration: 'none'
   })}>
-    <Logo>RB Collections</Logo>
+    <Logo>ZeekKart</Logo>
     </NavLink>
 </Left>
     
