@@ -40,9 +40,8 @@ padding-top:5px;
   ${mobile({ padding: "10px 0px" })}
     transition:  0.5 ease-in;
     transform: scale(1.1);
-  };
+`
 
-`;
 
 
 const Center = styled.div`
